@@ -7,12 +7,16 @@ using namespace std;
 #include "company.h"
 #include "product.h"
 
-void Product::SetName(string name) {
+void Product::SetName(const string& name) {
   this->name = name;
 }
 
-void Product::SetPrice(int price) {
+void Product::SetPrice(const int& price) {
   this->price = price;
+}
+
+void Product::Open() {
+  cout << "Name: " << name << " Price: " << price << endl;
 }
 
 string Product::GetName() {

@@ -17,11 +17,12 @@ public:
   Company(string name);
   // Getters
   string GetCompanyName();
-  int ListCompanyProducts();
+  void ListCompanyProducts();
   void AddProduct(string name, int price);
-  Product* VAddProduct(string name, int price);
   //
 private:
+  Product GetCompanyProduct(Product* inprod);
+  Product* VAddProduct(string name, int price);
   vector <Product*> CompanyProducts;
   string name;
   Money CompanyMoney;

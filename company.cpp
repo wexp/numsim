@@ -35,11 +35,10 @@ Product* Company::VAddProduct(string name, int price) {
  * CompanyProducts vector is only pointers, so this function
  * basically only gets all pointers in the vector right now.
  */
-int Company::ListCompanyProducts() {
+
+void Company::ListCompanyProducts() {
   for (int x=0; x<CompanyProducts.size(); x++) {
-    int y = 0;
-    y = CompanyProducts[x];
-    cout << y;
+    cout << CompanyProducts[x];
   }
 }
 
